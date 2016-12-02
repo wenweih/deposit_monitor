@@ -6,12 +6,12 @@ require 'deposit_monitor/version'
 Gem::Specification.new do |spec|
   spec.name          = "deposit_monitor"
   spec.version       = DepositMonitor::VERSION
-  spec.authors       = ["hww"]
-  spec.email         = ["836967373@qq.com"]
+  spec.authors       = ["https://huangwenwei.com"]
+  spec.email         = ["mr.huangwenwei@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ethereum smart contract account deposit monitor.}
+  spec.description   = %q{Ethereum smart contract account deposit monitor.}
+  spec.homepage      = "https://huangwenwei.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,4 +30,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.add_dependency "ethereum"
+  spec.add_dependency "daemons"
+  spec.add_dependency "bunny", "~> 2.6.1"
 end
